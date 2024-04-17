@@ -1,0 +1,192 @@
+:root {
+  box-sizing: border-box;
+  color: white;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(90deg, orange 0%, orangered);
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background: url(../images/8bitGrassBanner.jpg);
+  background-size: contain;
+  width: 100%;
+  height: fit-content;
+
+  align-items: center;
+  overflow: hidden;
+}
+
+.quote {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.black {
+  color: black;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.header img {
+  width: 100%;
+
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  margin-top: 130px;
+  height: fit-content;
+  min-height: 80vh;
+  color: black;
+  margin: 0;
+
+  padding: 0;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.884);
+  border: 2px solid orange;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.556);
+
+  width: 80%;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.instructions ul {
+  margin-left: 0px;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 100%;
+  margin: auto;
+  margin-left: -20px;
+}
+
+.code {
+  color: green;
+  margin: 30px auto;
+  width: 100%;
+}
+
+.screenshots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.screenshots img {
+  margin: 10px auto;
+  height: 50%;
+  max-height: 350px;
+  width: 80%;
+  max-width: 80vw;
+  border-radius: 12px;
+  border: 2px solid orange;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.556);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.footer {
+  text-align: center;
+
+  width: 100%;
+  height: 50px;
+}
+
+@media (min-width: 600px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .header h1 {
+    font-size: 70px;
+  }
+
+  .header img {
+    width: 70%;
+    height: 100%;
+  }
+  .screenshots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .screenshots img {
+    height: 100%;
+    max-height: 500px;
+  }
+
+  .main h1 {
+    min-width: 100%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .instructions {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .header img {
+    width: 50%;
+    max-width: 700px;
+    height: 100%;
+  }
+}
